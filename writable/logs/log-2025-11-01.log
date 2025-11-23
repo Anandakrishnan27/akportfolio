@@ -1,0 +1,116 @@
+ERROR - 2025-11-01 15:45:56 --> mysqli_sql_exception: Table 'profoliocontact.contact_name' doesn't exist in C:\wamp64\www\myportfolio\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\myportfolio\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\myportfolio\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\myportfolio\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\myportfolio\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\myportfolio\app\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\wamp64\www\myportfolio\system\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+#6 C:\wamp64\www\myportfolio\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+#7 C:\wamp64\www\myportfolio\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\myportfolio\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\myportfolio\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\myportfolio\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-11-01 15:45:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'profoliocontact.contact_name' doesn't exist
+[Method: POST, Route: contact-list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 2 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-01 15:45:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'profoliocontact.contact_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 4 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-01 15:45:56 --> [Caused by] mysqli_sql_exception: Table 'profoliocontact.contact_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 5 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-11-01 15:46:24 --> mysqli_sql_exception: Table 'profoliocontact.contact_name' doesn't exist in C:\wamp64\www\myportfolio\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\wamp64\www\myportfolio\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\myportfolio\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\myportfolio\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\myportfolio\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\myportfolio\app\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\wamp64\www\myportfolio\system\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+#6 C:\wamp64\www\myportfolio\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+#7 C:\wamp64\www\myportfolio\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\myportfolio\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\wamp64\www\myportfolio\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\wamp64\www\myportfolio\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-11-01 15:46:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'profoliocontact.contact_name' doesn't exist
+[Method: POST, Route: contact-list]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 2 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-01 15:46:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'profoliocontact.contact_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 4 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-11-01 15:46:24 --> [Caused by] mysqli_sql_exception: Table 'profoliocontact.contact_name' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `contact_name`', [], false)
+ 5 APPPATH\Controllers\MypageController.php(61): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MypageController->getContactList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MypageController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
